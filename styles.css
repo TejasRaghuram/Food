@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    width: 100%;
+    font-family: 'Source Sans 3';
+    font-size: 20px;
+    line-height: 30px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Palanquin Dark';
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+#content {
+    width: 600px;
+    margin-left: calc(50vw - 300px);
+    margin-top: 50px;
+}
+
+.nav-element {
+    display: inline;
+}
+
+.consists {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    bottom: 2px;
+}
+
+.clickable:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: crimson;
+    cursor: pointer;
+}
+
+#servings {
+    display: inline;
+}
+
+#servings-subtitle {
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+#slider {
+    appearance: none;
+    width: 350px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 7.5px;
+    position: relative;
+    top: 10px;
+}
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 12.5px;
+    background-image: url("slider.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+  
+
+#slider:hover {
+    cursor: pointer;
+}
+
+#measurements {
+    display: inline;
+    margin-left: 8px;
+}
+
+.measurement {
+    width: 115px;
+    height: 50px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+.measurement:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#measurement-tsp {
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    left: 4px;
+    background-color: crimson;
+    color: white;
+}
+
+#measurement-ml {
+    border-radius: 0 10px 10px 0;
+    background-color: lightgray;
+    color: black;
+}
+
+.step {
+    margin-top: 50px;
+}
+
+#reviews {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review {
+    width: 290px;
+    height: 200px; 
+    margin-top: 25px;
+    position: relative;
+    bottom: 50px;
+}
+
+.review-score {
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.review-title {
+    width: 220px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.review-description {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+.review-button {
+    width: 125px;
+    height: 42px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+    padding-top: 8px;
+}
+
+.review-right {
+    margin-left: 20px;
+}
+
+.review-button:hover {
+    background-color: rgb(90, 90, 90);
+    cursor: pointer;
+}
+
+#bottom-space {
+    height: 50px;
+}
+
+@media (max-width: 700px)
+{
+    #content {
+        width: calc(100vw - 100px);
+        margin-left: 50px;
+    }
+
+    #slider {
+        width: calc(100vw - 100px - 250px);
+    }
+
+    .review-right {
+        margin-left: 0px;
+    }
+}

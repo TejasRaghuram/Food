@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Grilled Peanut Butter and Jelly Sandwich Recipe</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="logo.png">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div>
+                <h5 class="nav-element clickable">RECIPES</h5>
+                <h5 class="nav-element consists">></h5>
+                <h5 class="nav-element clickable">MAIN DISHES</h5>
+                <h5 class="nav-element consists">></h5>
+                <h5 class="nav-element clickable">SANDWICH RECIPES</h5>
+            </div>
+            <h1>Grilled Peanut Butter and Jelly Sandwich</h1>
+            <p>This is peanut butter and jelly with a twist. The kids will thank you!</p>
+            <img src="hero.png">
+            <div id="servings">
+                <p id="servings-subtitle">Servings: 1</p>
+                <input type="range" min="1" max="8" value="1" id="slider" src="logo.png" onchange="setServings()">
+            </div>
+            <div id="measurements">
+                <p class="measurement" id="measurement-tsp" onclick="selectTSP()">Teaspoon</p>
+                <p class="measurement" id="measurement-ml" onclick="selectML()">Milliliter</p>
+            </div>
+            <h2>Ingredients</h2>
+            <ul>
+                <li id="butter">2 teaspoons butter</li>
+                <li id="bread">2 slices white bread</li>
+                <li id="jelly">2 teaspoons any flavor fruit jelly</li>
+                <li id="pbj">1 teaspoon peanut butter</li>
+            </ul>
+            <h2>Directions</h2>
+            <h4 class="step">Step 1</h4>
+            <p>Gather all ingredients.</p>
+            <img src="step1.png">
+            <h4 class="step">Step 2</h4>
+            <p>Heat a griddle or skillet to 350 degrees F (175 degrees C).</p>
+            <h4 class="step">Step 3</h4>
+            <img src="step3.png">
+            <p>Spread butter on one side of each slice of bread. Spread jelly on the unbuttered side of one slice of bread; spread peanut butter on the other unbuttered side.</p>
+            <h4 class="step">Step 4</h4>
+            <img src="step4.png">
+            <p>Place bread slices together, so peanut butter and jelly are in the middle.</p>
+            <h4 class="step">Step 5</h4>
+            <p>Cook on the preheated griddle until golden brown and heated through, about 4 minutes per side.</p>
+            <h2>Reviews</h2>
+            <div id="reviews">
+                <div class="review">
+                    <div class="review-heading">
+                        <h6 class="review-score">95</h6>
+                        <h6 class="review-title">Vignesh S</h6>
+                    </div>
+                    <p class="review-description">The sandwich tastes delicious!</p>
+                    <p class="review-button">Read More</p>
+                </div>
+                <div class="review review-right">
+                    <div class="review-heading">
+                        <h6 class="review-score">72</h6>
+                        <h6 class="review-title">Aryan K</h6>
+                    </div>
+                    <p class="review-description">Making and eating this was not an enjoyable experience.</p>
+                    <p class="review-button">Read More</p>
+                </div>
+                <div class="review">
+                    <div class="review-heading">
+                        <h6 class="review-score">87</h6>
+                        <h6 class="review-title">Ishaan S</h6>
+                    </div>
+                    <p class="review-description">Doesn't taste terrible, but isn't worth the work.</p>
+                    <p class="review-button">Read More</p>
+                </div>
+                <div class="review review-right">
+                    <div class="review-heading">
+                        <h6 class="review-score">97</h6>
+                        <h6 class="review-title">Kaushal K</h6>
+                    </div>
+                    <p class="review-description">This is the best meal I've had in my life!</p>
+                    <p class="review-button">Read More</p>
+                </div>
+            </div>
+            <div id="bottom-space"></div>
+        </div>
+    </body>
+</html>
