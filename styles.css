@@ -59,6 +59,32 @@ h5 {
     cursor: pointer;
 }
 
+table {
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 3px;
+    border-color: crimson;
+    padding-bottom: 15px;
+}
+
+tr {
+    width: 585px;
+    display: flex;
+}
+
+th {
+    margin-top: 15px;
+}
+
+#table-header {
+    background-color: crimson;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
 #servings {
     display: inline;
 }
@@ -202,6 +228,10 @@ h5 {
     #content {
         width: calc(100vw - 100px);
         margin-left: 50px;
+    }
+
+    tr {
+        width: calc(100vw - 115px);
     }
 
     #slider {
